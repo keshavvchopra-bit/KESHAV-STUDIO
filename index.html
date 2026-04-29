@@ -1361,16 +1361,7 @@ function loadPhoto(file) {
 })();
 
 /* -------- CONTACT FORM -------- */
-function handleSubmit(e) {
-  const btn = e.currentTarget, orig = btn.textContent;
-  btn.style.transform = 'scale(0.96)'; btn.style.opacity = '0.75';
-  setTimeout(() => { btn.textContent = 'Sending…'; btn.style.transform = ''; btn.style.opacity = ''; }, 100);
-  setTimeout(() => {
-    btn.textContent = '✓ Message Sent';
-    btn.style.background = 'linear-gradient(135deg,#5a9c6a,#3d7a4e)';
-    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; }, 3200);
-  }, 1300);
-}
+
 
 /* -------- EDIT HINT -------- */
 const editHint = document.getElementById('editHint');
